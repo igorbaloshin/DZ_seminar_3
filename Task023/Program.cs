@@ -17,18 +17,18 @@ void Print(int b)
 {
     Console.Write($"{b}, ");
 }
+
 if (N >= 0)
-{
     for(int i = 0; i <= N; i++)
-{
+    {
     int S = Kub(i);
     Print(S);
-}
-}
+    }
+
 if (N < 0)
 
 for(int i = N; i <= -1; i++)
-{
+    {
     int S = Kub(i);
     Print(S);
-}
+    }
