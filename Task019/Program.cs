@@ -52,19 +52,14 @@ bool CheckArray(int[]array)
 {
     int length = array.Length;
     int index = 0;
-    bool check = false;
+    //bool check = false;
     while(index <= length/2)
     {
-        if(array[index] == array[length-1-index])
-        check = true;
-        else
-        {
-        check = false;
-        return check;
-        }
+        if(array[index] != array[length-1-index])
+        return false;
         index++;
     }
-    return check;
+    return true;
 }
 
 Console.WriteLine("Введите число : ");
