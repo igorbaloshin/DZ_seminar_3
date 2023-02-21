@@ -63,20 +63,20 @@ bool CheckArray(int[]array)
 }
 
 Console.WriteLine("Введите число : ");
-int Polindrom = int.Parse(Console.ReadLine());
+int Palindrom = int.Parse(Console.ReadLine());
 
-int N = CountNumbers(Polindrom);
+int N = CountNumbers(Palindrom);
 
-int[]polindrom = new int[N];
+int[]palindrom = new int[N];
 
-FillArray(polindrom, Polindrom);
+FillArray(palindrom, Palindrom);
 
 //PrintArray(polindrom);
 
-bool Ch = CheckArray(polindrom);
+bool Ch = CheckArray(palindrom);
 
 if(Ch == false)
-Console.WriteLine("Число не полиндром");
+Console.WriteLine("Число не палиндром");
 if(Ch == true)
-Console.WriteLine("Число полиндром");
+Console.WriteLine("Число палиндром");
 
